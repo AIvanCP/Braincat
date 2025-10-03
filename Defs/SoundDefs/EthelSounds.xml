@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ethel Plush Sound Definitions -->
+	<SoundDef>
+		<defName>EthelPlush_APTOIA</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/APTOIA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_APTOII</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/APTOII</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_Blueuia</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/Blueuia</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_Lingangulixuia</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/lingangulixuia</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_OIAApple</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/OIAApple</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_OIACaramel</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/OIACaramel</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_OIANokia</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/OIANokia</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_OIANow</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/OIANow</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_OIIAMinecraft</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/OIIAMinecraft</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_UiaUiaUiaCat</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/uia-uia-uia-cat</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_UiaxSquid</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/uiaxsquid</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>EthelPlush_UiaxSugar</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ethel/uiaxsugar</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~45</volumeRange>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

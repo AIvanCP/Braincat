@@ -1,0 +1,71 @@
+# GitHub-friendly .gitignore for Visual Studio / .NET projects and RimWorld mods
+
+# ----- OS generated files -----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ----- Visual Studio / Rider / VSCode -----
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+*.sln.iml
+
+# JetBrains ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# ----- Build outputs -----
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+*.dll
+*.pdb
+*.mdb
+*.ilk
+*.exe
+*.app
+
+# Keep generated build/test folders
+TestResults/
+coverage/
+
+# ----- NuGet / packages -----
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ----- Logs, temp files -----
+*.log
+*.tmp
+*.temp
+
+# ----- Misc -----
+*.cache
+*.dbmdl
+
+# ----- Mod-specific rules -----
+# Ignore compiled assemblies and outputs inside Source/build folders, but keep the
+# `Assemblies` folder (used to ship prebuilt DLLs with the mod).
+Source/*/bin/
+Source/*/obj/
+Assemblies/*
+!Assemblies/*.dll
+
+# If your project keeps third-party libs in Source/*/Lib, keep them tracked
+!Source/*/Lib/
+
+# Keep media and defs (Textures, Sounds, Defs) tracked by default
+# (these are part of the mod and should be committed).
+
+# ----- End of file -----

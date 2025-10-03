@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>EthelPlush</AssemblyName>
+    <RootNamespace>BrainCat.EthelPlush</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Change this to your RimWorld installation directory -->
+    <RimWorldFolder>D:\Game\Rimworld</RimWorldFolder>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldFolder)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldFolder)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToModFolder" AfterTargets="Build">
+    <PropertyGroup>
+      <ModAssembliesFolder>$(ProjectDir)..\Assemblies</ModAssembliesFolder>
+    </PropertyGroup>
+    <ItemGroup>
+      <FilesToCopy Include="$(OutputPath)$(AssemblyName).dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(ModAssembliesFolder)" />
+    <Message Text="Copied $(AssemblyName).dll to mod Assemblies folder" Importance="high" />
+  </Target>
+</Project>

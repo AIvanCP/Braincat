@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ethel Plush Thing Definition -->
+	<ThingDef ParentName="FurnitureBase">
+		<defName>EthelPlush</defName>
+		<label>Ethel plush</label>
+		<description>A divine meme plushie of Ethel. While placed in your colony, it occasionally emits blessed sounds that encourage nearby colonists, granting them temporary buffs to movement speed, work speed, and mood.\n\n"May the divine meow guide you to prosperity!"</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Ethel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>14</pathCost>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>Furniture</designationCategory>
+		<tickerType>Normal</tickerType>
+		<uiIconScale>0.85</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>FurnitureDecoration</li>
+		</thingCategories>
+		<comps>
+			<li Class="BrainCat.EthelPlush.CompProperties_EthelPlush">
+				<tickInterval>1200</tickInterval>
+				<baseChance>0.05</baseChance>
+				<chanceIncrement>0.05</chanceIncrement>
+				<soundCooldownTicks>300</soundCooldownTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Recipe to craft Ethel Plush -->
+	<RecipeDef>
+		<defName>Make_EthelPlush</defName>
+		<label>make Ethel plush</label>
+		<description>Craft a divine Ethel plush from cloth.</description>
+		<jobString>Making Ethel plush.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1500</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<EthelPlush>1</EthelPlush>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Ethel Plush - Meme Furniture</name>
+	<author>BrainCat</author>
+	<packageId>braincat.ethelplush</packageId>
+	<description>Adds the Ethel Plush, a divine meme furniture that randomly emits blessed sounds and encourages your colonists with temporary buffs.
+
+Features:
+- Craftable furniture made from cloth
+- Randomly plays meme sounds
+- Grants mood, work speed, and movement buffs to colonists
+- Beautiful +15 decoration
+
+"May the divine meow guide your colony to prosperity!"</description>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies/>
+	<loadAfter/>
+</ModMetaData>
