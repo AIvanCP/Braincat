@@ -37,8 +37,8 @@
 		<comps>
 			<li Class="BrainCat.EthelPlush.CompProperties_EthelPlush">
 				<tickInterval>1200</tickInterval>
-				<baseChance>0.05</baseChance>
-				<chanceIncrement>0.05</chanceIncrement>
+				<baseChance>0.01</baseChance>
+				<chanceIncrement>0.01</chanceIncrement>
 				<soundCooldownTicks>300</soundCooldownTicks>
 			</li>
 		</comps>
