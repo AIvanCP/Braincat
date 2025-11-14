@@ -37,10 +37,10 @@ namespace BrainCat.EthelPlush
         {
             base.PostSpawnSetup(respawningAfterLoad);
             
-            // Initialize chance to base value
+            // Initialize chance to base value from mod settings
             if (currentChance == 0f)
             {
-                currentChance = Props.baseChance;
+                currentChance = EthelPlushMod.settings?.baseChance ?? Props.baseChance;
             }
 
             // Initialize sound list once
@@ -123,22 +123,27 @@ namespace BrainCat.EthelPlush
                 PlayRandomSound();
                 ApplyBuffsToPlayerPawns();
 
-                // Reset chance to base value
-                currentChance = Props.baseChance;
+                // Reset chance to base value from mod settings
+                currentChance = EthelPlushMod.settings?.baseChance ?? Props.baseChance;
 
                 // Start cooldown
                 cooldownCounter = Props.soundCooldownTicks;
             }
             else
             {
-                // Failed, increase chance for next time
-                currentChance += Props.chanceIncrement;
-
-                // Cap at 100% to prevent overflow
-                if (currentChance > 1.0f)
+                // Failed, increase chance for next time (if enabled in settings)
+                if (EthelPlushMod.settings?.enableChanceIncrease ?? true)
                 {
-                    currentChance = 1.0f;
+                    float increment = EthelPlushMod.settings?.chanceIncrementAmount ?? Props.chanceIncrement;
+                    currentChance += increment;
+
+                    // Cap at 100% to prevent overflow
+                    if (currentChance > 1.0f)
+                    {
+                        currentChance = 1.0f;
+                    }
                 }
+                // If increment disabled, chance stays the same
             }
         }
 
@@ -268,7 +273,8 @@ namespace BrainCat.EthelPlush
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref currentChance, "currentChance", Props.baseChance);
+            float defaultChance = EthelPlushMod.settings?.baseChance ?? Props.baseChance;
+            Scribe_Values.Look(ref currentChance, "currentChance", defaultChance);
             Scribe_Values.Look(ref tickCounter, "tickCounter", 0);
             Scribe_Values.Look(ref cooldownCounter, "cooldownCounter", 0);
         }
